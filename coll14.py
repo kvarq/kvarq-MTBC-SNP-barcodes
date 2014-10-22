@@ -23,7 +23,7 @@ def tsv2SNPs(path, genome, reference):
     return tests
 
 here = os.path.dirname(__file__)
-genome = Genome(os.path.join(here, 'MTB_ancestor_reference_coll.bases'), 'MTB ancestor')
+genome = Genome(os.path.join(here, 'MTB_ancestor_reference.bases'), 'MTB ancestor')
 coll14 = Reference('Coll et al (2014) -- doi: 10.1038/ncomms5812')
 SNPs = tsv2SNPs(os.path.join(here, 'coll14.tsv'), genome, coll14)
 
